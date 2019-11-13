@@ -20,7 +20,6 @@
           <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-java:3.141.59" />
           <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-api:3.141.59" />
           <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-edge-driver:3.141.59" />
-          <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-firefox-driver:3.141.59" />
           <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-ie-driver:3.141.59" />
           <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-opera-driver:3.141.59" />
           <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-safari-driver:3.141.59" />
@@ -49,6 +48,7 @@
           <element id="library" level="project" name="Maven: org.apache.commons:commons-compress:1.18" />
           <element id="library" level="project" name="Maven: org.jsoup:jsoup:1.11.3" />
           <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:3.141.59" />
+          <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-firefox-driver:3.141.59" />
         </element>
       </element>
       <element id="directory" name="META-INF">
