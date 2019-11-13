@@ -12,9 +12,9 @@ public class HomePageTest {
     private static WebDriver driver;
 
     @BeforeClass
-    public static void SetupChromeDriver() {
+    public static void SetupDriver() {
         // Setup the Chrome driver for the whole class
-        driver = ChromeDriverHelper.getDriver();
+        driver = FirefoxDriverHelper.getDriver();
     }
 
     @AfterClass
