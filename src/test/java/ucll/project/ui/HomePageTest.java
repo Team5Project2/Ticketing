@@ -23,6 +23,9 @@ public class HomePageTest {
         driver.close();
     }
 
+    /**
+     * This is a sample test, remove this test and write your own!
+     */
     @Test
     public void VisitHomePageTest() {
 
