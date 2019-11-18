@@ -3,18 +3,20 @@ package ucll.project.ui;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import static org.junit.Assert.assertEquals;
 
-public class HomePageTest {
+public class UsersPageTest {
 
     private static WebDriver driver;
 
     @BeforeClass
     public static void SetupDriver() {
-        // Setup the Chrome driver for the whole class
-        driver = ChromeDriverHelper.getDriver();
+        // Setup the Firefox driver for the whole class
+        driver = FirefoxDriverHelper.getDriver();
     }
 
     @AfterClass
@@ -27,10 +29,12 @@ public class HomePageTest {
      * This is a sample test, remove this test and write your own!
      */
     @Test
-    public void VisitHomePageTest() {
+    public void VisitUsersPageTest() {
 
         driver.get(Config.BASE_URL);
-        assertEquals("Hello world!", driver.getTitle());
+        WebElement link = driver.findElement(By.xpath("//a[text() = 'Users']"));
+        link.click();
+        assertEquals("All users", driver.getTitle());
 
     }
 
