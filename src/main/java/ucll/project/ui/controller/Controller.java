@@ -37,6 +37,9 @@ public class Controller extends HttpServlet {
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
             String command = request.getParameter("command");
+            if (command == null || command.trim().isEmpty()) {
+                command = "Index";
+            }
             RequestHandler handler = handlerFactory.getHandler(command, service);
             String destination = handler.handleRequest(request, response);
             handler.forwardRequest(destination, request, response);
