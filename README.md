@@ -1,5 +1,5 @@
 # Java EE starter template
-## Inluded:
+## Included:
   - Simple FrontController
   - Unit test
   - Selenium tests (Chrome and FireFox)
